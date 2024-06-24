@@ -18,7 +18,27 @@
 	#maincontent
 	{
 	max-width:42em;margin:15 auto;
+	}
+	/* 
+	a {
+		color: #8d1514;
+		text-decoration: none;
+	} */
 
+	.container {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		align-items: flex-start;
+		margin: 0 auto;
+		padding: 0px;
+	}
+	.text-content {
+		flex: 1;
+		padding-right: 0px;
+	}
+	.image-container {
+		flex-shrink: 0;
 	}
 </style>
 	
@@ -30,18 +50,33 @@
 <div id="maincontent" style="margin-top:70px">
   <h2>Rohan Sikand</h2>
 
-	<p>Just another <a href="https://www.stanford.edu/">stanford</a> student who studies cs :)</p>
+	
 
-	<p>[<a href="https://x.com/rosikand">Twitter</a>] [<a href="https://github.com/rosikand/">Github</a>] [<a href="https://www.linkedin.com/in/rosikand">LinkedIn</a>]</p>
+
+	
+
+	<div class="container">
+		<div class="text-content">
+			<img src="assets/prof1.jpeg" alt="profile img" width="100" height="auto">
+			<p>Just another <a href="https://www.stanford.edu/">stanford</a>🌲 student who studies cs :)</p>
+			<p>[<a href="https://x.com/rosikand">Twitter</a>] [<a href="https://github.com/rosikand/">Github</a>] [<a href="https://www.linkedin.com/in/rosikand">LinkedIn</a>] [<a href="mailto:rsikand@stanford.edu">rsikand@stanford.edu</a>]</p>
+		</div>
+		<div class="image-container">
+			<!-- <img src="assets/prof1.jpeg" alt="profile img" width="100" height="auto"> -->
+		</div>
+	</div>
+
+	
 
 	<p>Page will be updated soon...</p>
+
 	<hr> 
 
 	Some things about me:
 	<ul>
 		<li>From Colts Neck, NJ</li>
 		<li>B.S. and M.S. in CS at Stanford (2024, 2025)</li>
-		<li>Play golf</li>
+		<li>Play golf ⛳️</li>
 		<li>Interested in applied ML at scale</li>
 		<li>Working on reading ...</li>
 	</ul>
